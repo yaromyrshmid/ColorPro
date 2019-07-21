@@ -32,7 +32,7 @@ p {
 
 /* Header */
 
-#header-nav {
+.navbar-default {
 	background-image: url(../images/baner_main.png);
 	background-size: cover;
 	background-position: center;
@@ -41,13 +41,29 @@ p {
 	border: 0;
 }
 
+.navbar-studio {
+	background-image: url(../images/baner_studio_grafichne.png);	
+}
+
+.navbar-webdesign {
+	background-image: url(../images/baner_tworzenie_SI.png);	
+}
+
+.navbar-print {
+	background-image: url(../images/baner_drukarnia.png);		
+}
+
 .top-row {
 	width: 1140px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	margin-top: 70px;
-	margin-bottom: 20px;
+	margin-top: 79px;
+	margin-bottom: 7px;
+}
+
+.navbar-brand {
+	margin-right: 0px;
 }
 
 .navbar-brand h1 {
@@ -76,8 +92,7 @@ p {
 
 .custom-toggler {
 	position: relative;
-	top: 50%;
-    transform: translateY(-50%);
+	top: 15%;
 	border: 0px;
 	left: -5%;
 	background: none;
@@ -89,6 +104,14 @@ p {
 
 .pos-f-t {
 	text-align: right;
+}
+
+.pos-f-t .p-4 {
+	padding: 1rem !important;
+}
+
+.pos-f-t .p-4 p {
+	margin-bottom: .5rem;
 }
 
 .navbar .collapse.show, .collapsing {
@@ -107,6 +130,18 @@ p {
 	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(84,100,110, 0.7)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
+.call-on-xs {
+	text-align: right;
+}
+
+.call-on-xs a {
+	color: #ffdd00;
+}
+
+.call-on-xs a: hover {
+text-decoration: none;
+}
+
 /*Navigation*/
 
 .nav-item {
@@ -116,7 +151,7 @@ p {
 .nav-item>div {
 	background-color: white;
 	border: 5px solid transparent;
-	padding: 0.8vw 1.2vw 1.3vw 1.5vw;
+	padding: 1vw .6vw 1.4vw 2vw;
 }
 
 .nav-item>div:hover {
@@ -142,8 +177,8 @@ p {
 }
 
 .nav-item a {
-	width: 193px;
-	height: 54px;
+	width: 195px;
+	height: 56px;
 	font-family: Helvetica;
 	font-size: 0.9rem;
 	color: #4a4a4a;
@@ -151,6 +186,12 @@ p {
 	border: 1px #4a4a4a solid;
 	padding-top: 15px;
 	padding-bottom: 10px;
+}
+
+.nav-item a:hover {
+	background-color: #293072;
+	color: white;
+	text-decoration: none;
 }
 
 /*End Header*/
@@ -187,6 +228,14 @@ p {
 	background-color: white;
 }
 
+.oferty h2 {
+	margin-bottom: 24px;
+}
+
+.oferty h3 {
+	margin-bottom: 27px;
+}
+
 .oferty p {
 	color: #4a4a4a;
 	margin-top: 0px;
@@ -194,6 +243,10 @@ p {
 
 #web-design p, #studio p {
 	min-height: 130px;
+}
+
+#print p {
+	min-height: 277px;
 }
 
 .oferty_a {
@@ -224,15 +277,17 @@ p {
 	margin-top: 60px;
 }
 
-#print p {
-	min-height: 330px;
-}
+
 
 /*Contacts*/
 
 #contacts .container {
 	padding-top: 110px;
-	padding-bottom: 110px; 
+	padding-bottom: 125px; 
+}
+
+#contacts h2 {
+	margin-bottom: 45px;
 }
 
 #contacts p {
@@ -255,7 +310,7 @@ p {
 }
 
 form #form-button {
-	width: 40%;
+	width: 46%;
 	background-color: #4a4a4a;
 	border-radius: .0rem;
 	font-size: .75rem;
@@ -266,7 +321,10 @@ form #form-button {
 	color: #818181;
 }
 
-
+#message-sent {
+	font-size: .75rem;
+	color: #293072;
+}
 
 
 /* FOOTER */
@@ -319,7 +377,7 @@ footer .container {
 	/*Navigation*/
 	.nav-item {
 		height: 500px;
-		margin-bottom: 110px;
+		margin-bottom: 130px;
 	}
 
 	.nav-item>div {
@@ -360,7 +418,7 @@ footer .container {
 	/*Navigation*/
 	.nav-item {
 		height: 500px;
-		margin-bottom: 110px;
+		margin-bottom: 130px;
 	}
 
 	.nav-item>div {
@@ -391,17 +449,17 @@ footer .container {
 @media (min-width: 768px) and (max-width: 991px) {
 	
 	h2 {
-		font-size: 2rem;
+		font-size: 1.9rem;
 	}
 
 	h3 {
-		font-size: 1.5rem;	
+		font-size: 1.4rem;	
 	}
 
 	/*Navigation*/
 	.nav-item {
-		height: 180px;
-		margin-bottom: 30px;
+		height: 140px;
+		margin-bottom: 45px;
 	}
 
 	.nav-item>div {
@@ -412,8 +470,17 @@ footer .container {
 		display: none;
 	}
 
+	.nav-link-containter {
+		position: absolute;
+		top: 37%;
+		right: 55px;
+	}
+
 	.nav-item a {
-		font-size: 1rem;	
+		width: 130px;
+		height: 37px;
+		padding-top: 6px;
+		padding-bottom: 0px;
 	}
 
 	/*Footer*/
@@ -430,22 +497,23 @@ footer .container {
 @media (min-width: 576px) and (max-width: 767px) {
 	
 	h2 {
-		font-size: 2rem;
+		font-size: 1.9rem;
 	}
 
 	h3 {
-		font-size: 1.5rem;
+		font-size: 1.4rem;
 		text-overflow: ellipsis;	
 	}
 
 	/*Navigation*/
 	.nav-item {
-		height: 180px;
-		margin-bottom: 20px;
+		height: 160px;
+		margin-bottom: 35px;
 	}
 
 	#header-nav {
 	background-image: url(../images/baner_main_sm.png);
+	background-position: 70% 50%;
 	}
 	
 	.nav-item>div {
@@ -457,23 +525,29 @@ footer .container {
 	}
 
 	.nav-item a {
-		font-size: 1rem;	
-		float: right;
+		width: 130px;
+		height: 37px;
+		padding-top: 6px;
+		padding-bottom: 0px;
 	}
 
 	/*Oferty*/
 	#print p {
-	min-height: 0px;
+		min-height: 0px;
+	}
+
+	#print h2 {
+		margin-bottom: 0px;
 	}
 
 	#print h3 {
-		margin-top: 60px;
+		margin-top: 40px;
 	}
 
 	/*Footer*/
 	.footer-menu .row {
-    display: inline-grid;
-	padding-bottom: 25px
+    	display: inline-grid;
+		padding-bottom: 25px
 	}
 
 	.footer-menu span {
@@ -504,11 +578,12 @@ footer .container {
 
 	/*Navigation*/
 	.nav-item {
-		margin-bottom: 15px;
+		margin-bottom: 25px;
 	}
 
 	#header-nav {
 	background-image: url(../images/baner_main_sm.png);
+	background-position: 70% 50%;
 	}
 
 	.nav-item>div {
@@ -520,12 +595,13 @@ footer .container {
 	}
 
 	.nav-item a {
-		font-size: 0.9rem;	
-		float: right;
+		font-size: 0.8rem;	
 		width: 130px;
-    	height: 45px;
-    	padding-top: 10px;
+    	height: 30px;
+    	padding-top: 4px;
+    	margin: auto;
 	}
+
 
 	/*Offerty*/
 
@@ -535,11 +611,16 @@ footer .container {
 	}
 
 	#print p {
-	min-height: 0px;
+		min-height: 0px;
+	}
+
+	#print h2 {
+		margin-bottom: 0px;
 	}
 
 	#print h3 {
-		margin-top: 60px;
+		font-size: 1.3rem;
+		margin-top: 40px;
 	}
 
 	/*Contacts*/
