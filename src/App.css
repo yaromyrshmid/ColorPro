@@ -31,9 +31,16 @@ p {
 }
 
 /* Header */
+.logo {	
+	width: 154px;
+}
+
+#navbar-container {
+  flex-wrap: wrap;
+}
 
 .navbar-default {
-	background-image: url(../images/baner_main.png);
+	background-image: url(./images/baner_main.png);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -42,15 +49,15 @@ p {
 }
 
 .navbar-studio {
-	background-image: url(../images/baner_studio_grafichne.png);	
+	background-image: url(./images/baner_studio_grafichne.png);	
 }
 
 .navbar-webdesign {
-	background-image: url(../images/baner_tworzenie_SI.png);	
+	background-image: url(./images/baner_tworzenie_SI.png);	
 }
 
 .navbar-print {
-	background-image: url(../images/baner_drukarnia.png);		
+	background-image: url(./images/baner_drukarnia.png);		
 }
 
 .top-row {
@@ -88,17 +95,18 @@ p {
     background-color: #ffdd00;
     border-radius: 50%;
     padding: 0;
+    border: 0px;
 }
 
 .custom-toggler {
 	position: relative;
 	top: 15%;
-	border: 0px;
-	left: -5%;
-	background: none;
+	border: 0px;	
+  background: none;
+  font-size: 1rem;
 }
 
-.custom-toggler:focus {
+.navbar-circle:focus {
 	outline: 0;
 }
 
@@ -126,7 +134,7 @@ p {
 	text-decoration: none;
 }
 
-.custom-toggler .navbar-toggler-icon {
+.custom-toggler {
 	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(84,100,110, 0.7)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
@@ -197,17 +205,21 @@ text-decoration: none;
 /*End Header*/
 
 /*Jumbotrone*/
+.jumbotron {
+	background-color: white;
+}
+
 #about .container {
 	padding-top: 60px;
 	padding-bottom: 60px;
 }
 
-.jumbotrone p {
+.jumbotron p {
 	margin-top: 30px;
 	margin-bottom: 30px;
 }
 
-.jumbotrone .text_myriad {
+.jumbotron .text_myriad {
 	margin-top: 0px;
 	margin-bottom: 0px;
 	color: #818181;
@@ -220,11 +232,11 @@ text-decoration: none;
 	padding-bottom: 70px;
 }
 
-.oferty:nth-child(1n) {
+.offerty_yellow {
 	background-color: #ffdd00;
 }
 
-.oferty:nth-child(2n) {
+.offerty_white {
 	background-color: white;
 }
 
@@ -305,7 +317,7 @@ text-decoration: none;
 	font-size: .75rem;
 }
 
-.form-group #InputMessage {
+#validationFormik04 {
 	height: 173px;
 }
 
@@ -322,8 +334,9 @@ form #form-button {
 }
 
 #message-sent {
+	padding-left: 15px;
 	font-size: .75rem;
-	color: #293072;
+	color: #28a745;
 }
 
 
@@ -366,10 +379,15 @@ footer .container {
 	font-size: .8rem;
 }
 
-.social-icon {
+.social-icon-container {
   display: flex;
   justify-content: flex-end;
   margin-top: -4px;
+}
+
+.social-icon {
+ height: 18px;
+ width: 18px;
 }
 
 /********** XL devices only **********/
@@ -389,8 +407,8 @@ footer .container {
 		bottom: 0px;
 	}
 
-	/*Jumbotrone*/
-	.jumbotrone p {
+	/*Jumbotron*/
+	.jumbotron p {
 		padding-left: 202px;
 	}
 
@@ -430,8 +448,8 @@ footer .container {
 		bottom: 0px;
 	}
 
-	/*Jumbotrone*/
-	.jumbotrone p {
+	/*Jumbotron*/
+	.jumbotron p {
 		padding-left: 202px;
 	}
 
@@ -473,14 +491,19 @@ footer .container {
 	.nav-link-containter {
 		position: absolute;
 		top: 37%;
-		right: 55px;
+		right: 17px;
 	}
 
 	.nav-item a {
-		width: 130px;
-		height: 37px;
-		padding-top: 6px;
+		width: 140px;
+		height: 45px;
+		padding-top: 10px;
 		padding-bottom: 0px;
+	}
+
+	/*Oferty*/
+	#print p {
+		min-height: 290px;
 	}
 
 	/*Footer*/
@@ -512,7 +535,7 @@ footer .container {
 	}
 
 	#header-nav {
-	background-image: url(../images/baner_main_sm.png);
+	background-image: url(./images/baner_main_sm.png);
 	background-position: 70% 50%;
 	}
 	
@@ -525,9 +548,10 @@ footer .container {
 	}
 
 	.nav-item a {
+		margin-top: 8px;
 		width: 130px;
-		height: 37px;
-		padding-top: 6px;
+		height: 45px;
+		padding-top: 11px;
 		padding-bottom: 0px;
 	}
 
@@ -558,7 +582,7 @@ footer .container {
 		flex-direction: column-reverse;
 	}
 
-	.social-icon {
+	.social-icon-container {
 		justify-content: center;
 		padding-bottom: 30px;
 	}
@@ -582,7 +606,7 @@ footer .container {
 	}
 
 	#header-nav {
-	background-image: url(../images/baner_main_sm.png);
+	background-image: url(./images/baner_main_sm.png);
 	background-position: 70% 50%;
 	}
 
@@ -595,11 +619,11 @@ footer .container {
 	}
 
 	.nav-item a {
-		font-size: 0.8rem;	
-		width: 130px;
-    	height: 30px;
-    	padding-top: 4px;
-    	margin: auto;
+		font-size: 1rem;	
+		width: 150px;
+    height: 45px;
+    padding-top: 10px;
+		margin: 5px auto 5px;		
 	}
 
 
@@ -643,7 +667,7 @@ footer .container {
 	flex-direction: column-reverse;
 	}
 
-	.social-icon {
+	.social-icon-container {
 		justify-content: center;
 		padding-bottom: 30px;
 	}
