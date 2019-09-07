@@ -35,7 +35,7 @@ export class Content extends Component {
             <p className="text_myriad">W naszej ofercie graficznej szczególne miejsce zajmuje stworzenie korporacyjnego stylu, który sprawi, że Twoja marka będzie rozpoznawalna i popularna. Przygotujemy wszystkie niezbędne atrybuty dla Twojej firmy. Zaprojektujemy od podstaw akcesoria firmowe: logo, wizytówki, papiery firmowe, broszury, ulotki, katalogi firmowe.</p>
           </Col>
         </Row>
-        <a className="oferty_a" href="#">Oferta</a>
+        <a className="oferty_a" href="#contacts">Oferta</a>
         <Row className="img_row">
           <Col xs={4} className="square d-none d-md-block">
             <Image src={pic_SG_1} />
@@ -69,7 +69,7 @@ export class Content extends Component {
           <p className="text_myriad">Nowoczesne projekty graficzne stron internetowych.</p>
           </Col>
         </Row>
-        <a className="oferty_a gray" href="#">Oferta</a>
+        <a className="oferty_a gray" href="#contacts">Oferta</a>
         <Row className="img_row">
           <Col xs={4} className="square d-none d-md-block">
             <Image src={pic_TSI_1} />
@@ -102,7 +102,7 @@ export class Content extends Component {
           <Col xs={12} md={4}>
             <h3>Druk offcetowy</h3>
             <p className="text_myriad">Wysokonakładowe zlecenia realizujemy na maszynach offsetowych. Doskonałą jakość druku offsetowego otrzymujemy, korzystając z surowców oraz komponentów najwyższej jakości tylko sprawdzonych i renomowanych producentów.</p>
-            <a className="oferty_a" href="#">Oferta</a>
+            <a className="oferty_a" href="#contacts">Oferta</a>
             <div className="img_row square">
               <Image src={pic_D_1} />
             </div>
@@ -110,7 +110,7 @@ export class Content extends Component {
           <Col xs={12} md={4}>
             <h3>Druk cyfrowy</h3>
             <p className="text_myriad">To idealne rozwiązanie przy drukach niskonakładowych i personalizowanych. Wydrukujemy dla Was nawet w jednostkowych ilościach.</p>
-            <a className="oferty_a" href="#">Oferta</a>
+            <a className="oferty_a" href="#contacts">Oferta</a>
             <div className="img_row square">
               <Image src={pic_D_2} />
             </div>
@@ -118,7 +118,7 @@ export class Content extends Component {
           <Col xs={12} md={4}>
             <h3>Inne usługi</h3>
             <p className="text_myriad"><b>Usługi prepress</b><br /> Realizujemy zlecenia od projektu graficznego do przygotowania go do druku, realizację wydruku oraz dostarczenie gotowych materiałów do klienta.<br /> <b>Usługi introligatorski</b><br /> Wykonujemy wszystkie rodzaje opraw od standardowych po ekskluzywne.</p>
-            <a className="oferty_a" href="#">Oferta</a>
+            <a className="oferty_a" href="#contacts">Oferta</a>
             <div className="img_row square">
               <Image src={pic_D_3} />
             </div>

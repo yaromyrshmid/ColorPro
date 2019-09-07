@@ -33,17 +33,17 @@ export class Footer extends Component {
           <Col xs={12} md={2}>
             <Row>
               <Col xs={4} className="social-icon-container">
-                <a href="#">
+                <a href="https://www.facebook.com/ColorProPL/">
                   <Image src={FB_icon} className="social-icon" />
                 </a>
               </Col>
               <Col xs={4} className="social-icon-container">
-                <a href="#">
+                <a href="index.html">
                   <Image src={TW_icon} className="social-icon" />
                 </a>
               </Col>
               <Col xs={4} className="social-icon-container">
-                <a href="#">
+                <a href="index.html">
                   <Image src={RSS_icon} className="social-icon" />
                 </a>
               </Col>

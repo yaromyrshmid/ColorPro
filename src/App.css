@@ -322,7 +322,7 @@ text-decoration: none;
 }
 
 form #form-button {
-	width: 46%;
+	width: 100%;
 	background-color: #4a4a4a;
 	border-radius: .0rem;
 	font-size: .75rem;
@@ -334,7 +334,6 @@ form #form-button {
 }
 
 #message-sent {
-	padding-left: 15px;
 	font-size: .75rem;
 	color: #28a745;
 }

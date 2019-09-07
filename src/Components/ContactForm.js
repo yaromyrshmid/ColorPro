@@ -1,7 +1,8 @@
-import React, {Component} from 'react';
-import { Form, Button } from 'react-bootstrap';
+import React, { Component } from 'react';
+import { Form, Button, Row, Col } from 'react-bootstrap';
 import { Formik } from 'formik';
 import * as yup from 'yup';
+import { encode } from "base-64";
 
 const schema = yup.object({
   firstName: yup.string().required('Imię jest wymagane'),
@@ -9,19 +10,33 @@ const schema = yup.object({
     .email('E-mail jest nie prawidłowy')
     .required('Email jest wymagany'),
   subject: yup.string().required('Temat jest wymagane'),
-  message: yup.string().required('Treść wiadomości jest wymagane'),  
+  message: yup.string().required('Treść wiadomości jest wymagane'),
 });
 
 export class ContactForm extends Component {
+
+  postData(values) {
+    const { firstName, email, subject, message } = values;
+
+    return fetch('https://colorpro-backend-api.herokuapp.com/api/v1/1234567890/landing_page/', {
+      method: 'POST',
+      headers: new Headers({
+        'Authorization': 'Basic ' + encode("colorpro_api:colorpro"),
+        'Content-Type': 'application/json'
+      }),
+      body: JSON.stringify({ name: firstName, email, m_theme: subject, m_text: message })
+    });
+
+  }
+
   render() {
     return (
       <Formik
         validationSchema={schema}
-        // onSubmit={console.log}
         onSubmit={(values) => {
-          console.log(values);
           const messageSent = 'Twoja wiadomość została wysłana.'
-        	document.querySelector("#message-sent").textContent = messageSent;
+          document.querySelector("#message-sent").textContent = messageSent;
+          this.postData(values)
         }}
         initialValues={{
           firstName: '',
@@ -39,7 +54,7 @@ export class ContactForm extends Component {
           isValid,
           errors,
         }) => (
-          <Form noValidate onSubmit={handleSubmit}>
+            <Form noValidate onSubmit={handleSubmit}>
               <Form.Group controlId="validationFormik01">
                 <Form.Control
                   type="text"
@@ -69,7 +84,7 @@ export class ContactForm extends Component {
                   placeholder="Temat wiadomości"
                   name="subject"
                   value={values.subject}
-                  onChange={handleChange}                  
+                  onChange={handleChange}
                   isInvalid={touched.subject && !!errors.subject}
                 />
                 <Form.Control.Feedback type="invalid">
@@ -89,10 +104,12 @@ export class ContactForm extends Component {
                   {errors.message}
                 </Form.Control.Feedback>
               </Form.Group>
-            <Button id="form-button" type="submit">Wysłać</Button>
-            <span id="message-sent"></span>
-          </Form>
-        )}
+              <Row>
+                <Col xs={6}> <Button id="form-button" type="submit" >Wysłać</Button> </Col>
+                <Col xs={6}><span id="message-sent"></span></Col>
+              </Row>
+            </Form>
+          )}
       </Formik>
     );
   }
