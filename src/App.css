@@ -146,7 +146,7 @@ p {
 	color: #ffdd00;
 }
 
-.call-on-xs a: hover {
+.call-on-xs :hover {
 text-decoration: none;
 }
 
