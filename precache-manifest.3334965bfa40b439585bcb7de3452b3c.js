@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "813635c8058771f4d548c0c81e2f1627",
+    "revision": "feac500d14aba3f8f489e9b639e210b9",
     "url": "/ColorPro/index.html"
   },
   {
-    "revision": "3179250f3d915160d63f",
-    "url": "/ColorPro/static/css/main.509edcb4.chunk.css"
+    "revision": "cc15201909039df6c2d3",
+    "url": "/ColorPro/static/css/main.f314e2e7.chunk.css"
   },
   {
     "revision": "98a7a830897239b80864",
     "url": "/ColorPro/static/js/2.cdb92da8.chunk.js"
   },
   {
-    "revision": "3179250f3d915160d63f",
-    "url": "/ColorPro/static/js/main.acc255f0.chunk.js"
+    "revision": "cc15201909039df6c2d3",
+    "url": "/ColorPro/static/js/main.9b64df13.chunk.js"
   },
   {
     "revision": "612035c08e05d3e7775d",
