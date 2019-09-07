@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/ColorPro/static/css/main.509edcb4.chunk.css",
+    "main.js": "/ColorPro/static/js/main.acc255f0.chunk.js",
+    "main.js.map": "/ColorPro/static/js/main.acc255f0.chunk.js.map",
+    "runtime~main.js": "/ColorPro/static/js/runtime~main.ce6a04c8.js",
+    "runtime~main.js.map": "/ColorPro/static/js/runtime~main.ce6a04c8.js.map",
+    "static/js/2.cdb92da8.chunk.js": "/ColorPro/static/js/2.cdb92da8.chunk.js",
+    "static/js/2.cdb92da8.chunk.js.map": "/ColorPro/static/js/2.cdb92da8.chunk.js.map",
+    "index.html": "/ColorPro/index.html",
+    "precache-manifest.44351be54fdc09e1b63b33c58adf8d42.js": "/ColorPro/precache-manifest.44351be54fdc09e1b63b33c58adf8d42.js",
+    "service-worker.js": "/ColorPro/service-worker.js",
+    "static/css/main.509edcb4.chunk.css.map": "/ColorPro/static/css/main.509edcb4.chunk.css.map",
+    "static/media/FB_icon.svg": "/ColorPro/static/media/FB_icon.55dad71f.svg",
+    "static/media/RSS_icon.svg": "/ColorPro/static/media/RSS_icon.ab350240.svg",
+    "static/media/TW_icon.svg": "/ColorPro/static/media/TW_icon.c704551a.svg",
+    "static/media/App.css": "/ColorPro/static/media/baner_tworzenie_SI.00aadb08.png",
+    "static/media/logo.svg": "/ColorPro/static/media/logo.33ee0279.svg",
+    "static/media/pic_D_1.png": "/ColorPro/static/media/pic_D_1.36f68833.png",
+    "static/media/pic_D_2.png": "/ColorPro/static/media/pic_D_2.7dcec649.png",
+    "static/media/pic_D_3.png": "/ColorPro/static/media/pic_D_3.4fe79772.png",
+    "static/media/pic_SG_1.png": "/ColorPro/static/media/pic_SG_1.54c07081.png",
+    "static/media/pic_SG_2.png": "/ColorPro/static/media/pic_SG_2.03d09847.png",
+    "static/media/pic_SG_3.png": "/ColorPro/static/media/pic_SG_3.e080422b.png",
+    "static/media/pic_TSI_1.png": "/ColorPro/static/media/pic_TSI_1.37eecb2b.png",
+    "static/media/pic_TSI_2.png": "/ColorPro/static/media/pic_TSI_2.c272ca21.png",
+    "static/media/pic_TSI_3.png": "/ColorPro/static/media/pic_TSI_3.2f28c31b.png"
+  }
+}
