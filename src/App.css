@@ -389,6 +389,16 @@ footer .container {
  width: 18px;
 }
 
+.developer {
+	text-decoration: none;
+	color: #ffdd00;
+}
+
+.developer:hover, .developer:focus, .developer:visited {
+	text-decoration: none;
+	color: #ffdd00;
+}
+
 /********** XL devices only **********/
 @media (min-width: 1200px) {
 	/*Navigation*/

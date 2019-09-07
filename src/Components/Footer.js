@@ -28,7 +28,8 @@ export class Footer extends Component {
         </Row>
         <Row className="social">
           <Col xs={12} md={10}>
-            <p>&copy; 2019 All rights reserved.</p>
+            <p>&copy; 2019 All rights reserved.<br />
+            Front-end development: <a className="developer" href="https://www.linkedin.com/in/yaromyr-shmid-2a468398" target="_blank" rel="noopener noreferrer">Yaromyr Shmid</a>. Back-end integration: Ihor Rokytskyi.</p>
           </Col>          
           <Col xs={12} md={2}>
             <Row>
